@@ -17,6 +17,6 @@ public class ClientRequestDto {
     @NotNull
     private String paternalLastName;
     @NotNull
-    @Pattern(regexp = "^\\d{4}-\\d{2}-\\d{2}$", message = "Ingrese un formato correcto de fecha yyyy-mm-dd")
+    //@Pattern(regexp = "^\\d{4}-\\d{2}-\\d{2}$", message = "Ingrese un formato correcto de fecha yyyy-mm-dd")
     private LocalDate dateBirth;
 }

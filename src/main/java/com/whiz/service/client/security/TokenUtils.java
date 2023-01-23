@@ -14,7 +14,7 @@ import java.util.Map;
 public class TokenUtils {
 
     private final static String ACCESS_TOKEN_SECRET = "4qhq8LrEBfYcaRHxhdb9zURb2rf8e7Ud";
-    private final static Long ACCESS_TOKEN_VALIDITY_SECONDS = 30L;
+    private final static Long ACCESS_TOKEN_VALIDITY_SECONDS = 300L; // 5 min
 
     //Crear Token
     public static String createToken(String name, String email) {

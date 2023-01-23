@@ -12,6 +12,7 @@ public class ClientResponseDto {
     private String lastName;
     private Byte age;
     private String dateBirth;
-    private LocalDate probableDateDeath;
+    private Byte probableAgeDeath;
+    private String probableDateDeath;
     private String creationDateTime;
 }

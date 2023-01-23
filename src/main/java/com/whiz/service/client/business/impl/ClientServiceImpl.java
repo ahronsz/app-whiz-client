@@ -49,7 +49,7 @@ public class ClientServiceImpl implements ClientService {
         return clientRepository.findAll();
     }
 
-    // Calcular la desviación estándar población
+    // Calcula la desviación estándar población
     private KpiClientResponseDto calculateStandardDeviation(List<Byte> byteList) {
         Double average = byteList.stream().mapToDouble(Byte::intValue).sum() / byteList.size();
         double standardDeviation = 0.0;

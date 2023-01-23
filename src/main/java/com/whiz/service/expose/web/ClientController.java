@@ -21,19 +21,19 @@ public class ClientController {
     private ClientService clientService;
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping
+    @PostMapping("/crearCliente")
     public Completable create(@RequestBody @Valid ClientRequestDto clientRequestDto) {
         return clientService.create(clientRequestDto);
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping
+    @GetMapping("/listClientes")
     public Flowable<ClientResponseDto> list() {
         return clientService.getAll();
     };
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/kpi")
+    @GetMapping("/kpiClientes")
     public Single<KpiClientResponseDto> kpi() {
         return clientService.getKpi();
     };
